@@ -1,3 +1,5 @@
 export const environment = {
-  production: true
+  production: true,
+  websocket: 'http://localhost:8080/live',
+  api: 'http://localhost:8080/api/'
 };

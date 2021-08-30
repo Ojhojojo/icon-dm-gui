@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('gundam-gui app is running!');
+    expect(page.getTitleText()).toEqual('icon-dm-gui app is running!');
   });
 
   afterEach(async () => {
