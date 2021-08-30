@@ -1,0 +1,9 @@
+img {
+  height: 110px;
+  max-width: 300px;
+  margin: auto;
+}
+
+.card-container {
+  cursor: pointer;
+}

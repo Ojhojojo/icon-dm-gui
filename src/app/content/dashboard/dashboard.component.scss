@@ -1,0 +1,73 @@
+.header-icon {
+  font-size: 3em;
+  height: 36px;
+  width: 36px;
+  margin: auto;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+.mat-table {
+  overflow: auto;
+  max-height: 500px;
+}
+
+.mat-column-activity{
+  cursor: pointer;
+}
+
+.transaction-hash:hover {
+  color:  teal;
+}
+
+.mat-column-app {
+  word-wrap: break-word !important;
+  white-space: unset !important;
+  flex: 0 0 10% !important;
+  width: 10% !important;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+.mat-column-timestamp {
+  word-wrap: break-word !important;
+  white-space: unset !important;
+  flex: 0 0 15% !important;
+  width: 15% !important;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+.image-cell {
+  height: 45px;
+}
+
+.img-card {
+  height: 80px;
+  margin: auto;
+}
+
+.mat-card-header .mat-card-title {
+  font-size: 30px;
+}
+
+.mat-card-header-text {
+  margin: 10px 0 0 0;
+}
+
+.filter {
+  margin: 10px;
+}

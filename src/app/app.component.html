@@ -1,0 +1,28 @@
+<mat-toolbar color="primary" class="header">
+    <mat-icon (click)="sidenav.toggle()" class="hamburger">menu</mat-icon>
+    <img class="logo" src='../assets/icons/icon.svg'/>
+    <p>dm</p>
+</mat-toolbar>
+
+<mat-sidenav-container>
+    <!-- Sidenav -->
+    <mat-sidenav #sidenav [mode]="isBiggerScreen() ? 'over' : 'side'" [(opened)]="opened" [fixedInViewport]="true" [fixedTopGap]>
+        <mat-nav-list>
+            <a *ngFor="let nav of navigationList" mat-list-item routerLink="{{nav.link}}" routerLinkActive="active" (click)="setActiveLink(nav.title)">
+                <mat-icon>{{nav.icon}}</mat-icon> {{nav.title}}
+            </a>
+        </mat-nav-list>
+    </mat-sidenav>
+
+    <!-- Main content -->
+    <mat-sidenav-content>
+        <section class="mat-typography title-group">
+            <!-- <h2>{{title}}</h2> -->
+            <mat-divider></mat-divider>
+        </section>
+        <section>
+            <router-outlet></router-outlet>
+        </section>
+
+    </mat-sidenav-content>
+</mat-sidenav-container>
